@@ -36,7 +36,7 @@ Airplane presented in models.py with fields:
 - type_id(Integer, default=1)
 - passenger_assumption=(Integer, defualt=0)
 
-Serializer to get data of airplanes:
+Serializer fields to get data of airplanes:
 - uuid
 - type_id
 - passenger_assumption
