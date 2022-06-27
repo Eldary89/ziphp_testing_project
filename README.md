@@ -21,7 +21,7 @@ Step to run the project(For Windows):
    - localhost:8000/swagger
 
 5. Use POST /api/v1/common/airplane/ and body. To create an airplane
-  {"type_id": int, "passenger_assumption": int}
+{"type_id": int, "passenger_assumption": int}
 
 6. Use GET /api/v1/common/airplane/. To get all airplanes with their calculated fuel consumption 
 per minute and total flight time according to passenger assumption.
@@ -29,23 +29,23 @@ per minute and total flight time according to passenger assumption.
 7. You can use PUT and PATCH to modify airplane by passing uuid of the airplane
 
 Airplane presented in models.py with fields:
-    - uuid(Primary Key, default=uuid4)
-    - is_active(Boolean, defaulte=True)
-    - created(DateTime, auto_now_add=True)
-    - updated(DateTime, autonow=True)
-    - type_id(Integer, default=1)
-    - passenger_assumption=(Integer, defualt=0)
+- uuid(Primary Key, default=uuid4)
+- is_active(Boolean, defaulte=True)
+- created(DateTime, auto_now_add=True)
+- updated(DateTime, autonow=True)
+- type_id(Integer, default=1)
+- passenger_assumption=(Integer, defualt=0)
 
 Serializer to get data of airplanes:
-    - uuid
-    - type_id
-    - passenger_assumption
-    - fuel_consumption_per_minute
-    - total_flight_time
+- uuid
+- type_id
+- passenger_assumption
+- fuel_consumption_per_minute
+- total_flight_time
 
 TestCases
-    1. To check if 10 airplanes can be created and retrieved
-    2. To check after creation of 10 airplanes calculated data of fuel consumption and total flight time are correct
+1. To check if 10 airplanes can be created and retrieved
+2. To check after creation of 10 airplanes calculated data of fuel consumption and total flight time are correct
 
 To run test cases use
-    - python manage.py test common
+- python manage.py test common
